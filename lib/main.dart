@@ -19,10 +19,38 @@ class Home extends StatelessWidget {
           backgroundColor:Colors.red[600] ,
         ),
         body:Center(
-          child:Icon(
-            Icons.airport_shuttle,
-            color: Colors.lightBlue,
-          ),
+          child: IconButton(
+            onPressed: (){
+              print('Floating Action Button Pressed!');
+            },
+             icon: Icon(Icons.alternate_email),
+             color: Colors.amber,
+
+            ),
+          // child :ElevatedButton(
+          //   onPressed:(){},
+           
+          //   label:Text(
+          //     'Mail Me'
+          //   ),
+          //   color: Colors.amber,
+          //   icons:Icon(
+          //     Icons.airport_shuttle,
+          //   ),
+            
+          // ),
+          // child: FloatingActionButton(
+          //   onPressed:(){
+          //     print('Floating Action Button Pressed!');
+          //   },
+          //   child:Text('Click me Awesome'),
+          //   // color:Colors.lightBlue,
+          // ),
+          // child:Icon(
+          //   Icons.airport_shuttle,
+          //   color: Colors.lightBlue,
+          //   size: 50.0,
+          // ),
           // child:  Text(
           //   'Hello Douglas',
           //   style: TextStyle(
